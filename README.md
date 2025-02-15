@@ -1,34 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Wallet Test
 
-First, run the development server:
+Wallet Test là một dự án thử nghiệm tích hợp ví Aptos vào một ứng dụng web được xây dựng bằng Next.js. Dự án giúp người dùng kết nối ví, kiểm tra số dư và thực hiện các giao dịch trên blockchain Aptos.
 
-```bash
-npm run dev
-# or
-yarn dev
+## 🛠 Công nghệ sử dụng
+
+-   **Next.js** - Framework React để xây dựng giao diện web.
+    
+-   **Aptos SDK** - Thư viện để tương tác với blockchain Aptos.
+    
+-   **TypeScript** - Ngôn ngữ lập trình mạnh mẽ giúp viết code an toàn hơn.
+    
+-   **Tailwind CSS** - Framework CSS để tạo giao diện đẹp và dễ tùy chỉnh.
+    
+
+## 🚀 Cài đặt
+
+### Yêu cầu hệ thống
+
+-   Node.js (>= 16.0)
+    
+-   Git
+    
+-   Aptos Wallet (Petra, Martian, Pontem,...)
+    
+
+### Cách chạy dự án
+
+1.  **Clone repository**
+    
+    ```
+    git clone https://github.com/your-username/wallet-test.git
+    cd wallet-test
+    ```
+    
+2.  **Cài đặt dependencies**
+    
+    ```
+    npm install
+    ```
+    
+    hoặc
+    
+    ```
+    yarn install
+    ```
+    
+3.  **Cấu hình môi trường**
+    
+    -   Tạo file `.env.local` và thêm thông tin như sau:
+        
+        ```
+        NEXT_PUBLIC_APTOS_NODE_URL=https://fullnode.testnet.aptoslabs.com/v1
+        NEXT_PUBLIC_WALLET_PROVIDER=petra
+        ```
+        
+4.  **Chạy ứng dụng**
+    
+    ```
+    npm run dev
+    ```
+    
+    hoặc
+    
+    ```
+    yarn dev
+    ```
+    
+    Mở trình duyệt và truy cập `http://localhost:3000` để xem ứng dụng.
+    
+
+## 📌 Tính năng
+
+-   Kết nối ví Aptos (Petra, Martian, Pontem,...).
+    
+-   Hiển thị số dư tài khoản.
+    
+-   Gửi và nhận token APT.
+    
+-   Tích hợp với Aptos SDK để tương tác với smart contract.
+    
+
+## 🛠 Triển khai
+
+Bạn có thể triển khai dự án lên **Vercel** bằng cách:
+
+```
+vercel
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Hoặc deploy lên **Netlify**:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+netlify deploy
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📜 Giấy phép
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Dự án được phát hành theo giấy phép MIT.
